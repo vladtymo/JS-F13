@@ -27,21 +27,7 @@ console.log("isValid type:", typeof (isValid));
 alert("Hello from Alert!");
 
 userName = prompt("Enter your name:");
-
 console.log(userName + "...");
 
-// Arifmetic Operators: + - * / %
-result = (2 + 2) * 2;
-console.log(`2 + 2 * 2 = ${result}`);
-
-price = +prompt("Enter product price:");        // +string - convert string to number
-countity = +prompt("Enter countity of product:");
-
-console.log("price type:", typeof(price));
-console.log("countity type:", typeof(countity));
-
-totalPrice = price * countity;
-console.log(`Total Price: ${totalPrice}$`);
-
-
-
+number = +prompt("Enter a number:");
+console.log("Number:", number);

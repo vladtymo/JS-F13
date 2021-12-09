@@ -31,3 +31,6 @@ console.log(userName + "...");
 
 number = +prompt("Enter a number:");
 console.log("Number:", number);
+
+answer = comfirm("Do you want to ...:");
+console.log("Answer:", answer);

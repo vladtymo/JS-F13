@@ -65,16 +65,25 @@ while(condition) {  1
     #####
 */
 
-let heigth = +prompt("Enter heigth of the triagnle: ");
+let answer = confirm("Do you want to print triangle?");
 
-// цикл який повторюється для кожного рядка
-for (let i = 1; i <= heigth; ++i) {
+if (answer == true) {
     
-    let line = "";
-    // цикл який додає певну к-сть символів
-    for(let x = 1; x <= i; ++x) {
-        //console.log(`${i} #`);
-        line += "#";
+    let heigth = +prompt("Enter heigth of the triagnle: ");
+
+    document.write(`<h2>Triangle with heigth of ${heigth}</h2>`);
+
+    // цикл який повторюється для кожного рядка
+    for (let i = 1; i <= heigth; ++i) {
+        
+        let line = "";
+        // цикл який додає певну к-сть символів
+        for(let x = 1; x <= i; ++x) {
+            //console.log(`${i} #`);
+            line += "#";
+        }
+        //console.log(line);
+        document.write(`<span>${line}</span><br>`);
     }
-    console.log(line);
 }
+else console.log("See you later!");

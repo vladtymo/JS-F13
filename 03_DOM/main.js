@@ -6,5 +6,5 @@ const addBtn = document.getElementById("add-btn");
 
 addBtn.onclick = () => {
     // code
-    carList.innerHTML += '<li class="list-group-item">New Element from JS</li>';
+    carList.innerHTML += '<li class="list-group-item"><img src="food.png">New Element from JS</li>';
 };

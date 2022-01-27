@@ -114,8 +114,81 @@ let order = {
     }
 };
 
+console.log("Street:", order.client.address.street);
+
 function deliverOrder(address) {
     console.log(`Shipping the order to ${address.city} ${address.country}, ${address.street} ${address.building}`);
 }
 
 deliverOrder(order.client.address);
+
+// Object with Arrays
+let bestMovie = {
+    title: "Fast & Furious 1",
+    year: 2001,
+    genres: ["Action", "Crime", "Triller"],
+    rating: 5,
+    actors: [
+        {
+            fullName: "Vin Diesel",
+            nickname: "Dominic Toretto"
+        },
+        {
+            fullName: "Paul Walker",
+            nickname: "Brian O'Conner"
+        },
+        {
+            fullName: "Michelle Rodriguez",
+            nickname: "Letty Ortiz"
+        },
+        {
+            fullName: "Jordana Brewster",
+            nickname: "Mia Toretto"
+        }
+    ]
+}
+let worseMovie = {
+    title: "The Matrix Resurrections",
+    year: 2021,
+    genres: ["Sci-fi", "Action"],
+    rating: 3,
+    actors: [
+        {
+            fullName: "Keanu Reeves",
+            nickname: "Neo"
+        },
+        {
+            fullName: "Laurence Fishburne",
+            nickname: "Morpheus"
+        },
+        {
+            fullName: "Jessica Henwick",
+            nickname: "Bugs"
+        }
+    ]
+}
+
+function showMovieMainInfo(movie) {
+    console.log(`Movie ${movie.title} ${movie.year}\nGenres: ${movie.genres}`);
+}
+function showActorRealNames(movie) {
+    for (const m of movie.actors) {
+        console.log("Full Name: ", m.fullName);
+    }
+}
+function showActorNicknames(movie) {
+    for (const m of movie.actors) {
+        console.log("Nickname: ", m.nickname);
+    }
+}
+function addGenreToMovie(genre, movie) {
+    movie.genres.push(genre);
+}
+
+showMovieMainInfo(bestMovie);
+addGenreToMovie("Drama", bestMovie);
+showMovieMainInfo(bestMovie);
+
+showActorRealNames(worseMovie);
+showActorNicknames(worseMovie);
+

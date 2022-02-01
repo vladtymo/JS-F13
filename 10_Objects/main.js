@@ -191,4 +191,3 @@ showMovieMainInfo(bestMovie);
 
 showActorRealNames(worseMovie);
 showActorNicknames(worseMovie);
-

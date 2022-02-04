@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veshalka Game</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #generated-word {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        #text {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Veshalka!</h1>
+
+    <p>Word: <span id="generated-word"></span></p>
+    <div>
+        <label>
+            Guess the letter in the word:
+            <input type="text" id="text">
+        </label>
+        <button id="submit">Submit</button>
+    </div>
+    <!-- <small>Real word: <span id="real-word"></span></small> -->
+
+    <script src="./main.js"></script>
+</body>
+</html>

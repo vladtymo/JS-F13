@@ -47,3 +47,22 @@ console.log(number != 10);
 
 isBigger = number > 5;
 console.log("IsValid type:", typeof(isBigger));
+
+// Operator Precedence
+// ++ -- (prefix / postfix forms)
+
+let a = 5;
+
+let b = ++a;
+
+console.log(`a = ${a}, b = ${b}`); // 6 6
+
+let array = [5, 6, 7, 8];
+
+let count = array.length;
+array[count++] = 9;
+//++count;
+
+array[count++] = 10;
+//++count;
+
